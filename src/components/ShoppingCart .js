@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ShoppingCartItem from './ShoppingCartItem'
+// import ShoppingCartItem from './ShoppingCartItem'
 ​
 const CartListContainer = styled.div`
     display: grid;
