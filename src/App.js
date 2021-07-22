@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Filters from "./Filters";
-import Products from "./Products";
-import ShoppingCart from "./ShoppingCart";
-
+import Filters from "./components/Filters";
+import Products from "./components/Products";
+import ShoppingCart from "./components/ShoppingCart";
+import ProductsCards from "./components/ProductsCards";
+import ShoppingCartItem from "./components/ShoppingCartItem"
 
 
 
@@ -41,6 +42,10 @@ price: 60},
 {product: 'blusadez', 
 price: 60},
 ]
+
+
+
+
 
 
 class App extends React.Component {
@@ -83,7 +88,7 @@ class App extends React.Component {
               nameFilter={this.state.nameFilter}
               onChangeMinFilter={this.onChangeMinFilter}            
               onChangeMaxFilter={this.onChangeMaxFilter}            
-              onChangeNameFilter={this.onChangeNameFilter}                  
+        onChangeNameFilter={this.onChangeNameFilter}                
             />
             <Products 
               products={products}
@@ -92,10 +97,21 @@ class App extends React.Component {
               nameFilter={this.state.nameFilter}
               onAddProductToCart={this.onAddProductToCart}
             />
-            <ShoppingCart
+
+
+
+         <ShoppingCart
               productsInCart={this.state.productsInCart}
               onRemoveProductFromCart={this.onRemoveProductFromCart}
-            />
+         />
+
+<ProductsCards
+
+
+
+/>
+
+
           </AppContainer>
         );
       }
