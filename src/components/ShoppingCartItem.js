@@ -11,7 +11,7 @@ p {
 }
 img {
     width: 50px;
-    heigth:50px;
+  
 }
 `
 
