@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Products from './Products';
 
 const FiltersContainer = styled.div`
 border: 2px solid black;
