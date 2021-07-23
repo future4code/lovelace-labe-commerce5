@@ -85,16 +85,7 @@ class App extends React.Component {
   filtroMaximo: 200,
   nomeFiltro: "",
   
-  productsInCart: [
-
-    {
-     
-    },
-
-    {
-    
-   }
-  ] 
+  productsInCart: [] 
  }
 
  

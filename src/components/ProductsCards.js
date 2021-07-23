@@ -25,7 +25,7 @@ const Imagens = styled.img`
 display: flex;
 width: 200px;
 height: 200px;
-margin-left: 50px;
+margin-left: 75px;
 margin-top: 10px;
 `
 

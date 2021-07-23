@@ -9,13 +9,20 @@ align-items: center;
 p {
     margin: 10px;
 }
+img {
+    width: 50px;
+    heigth:50px;
+}
 `
 
 export class ShoppingCartItem extends React.Component {
     render() {
         return <ItemContainer>
+            
             <p>{this.props.cartItem.quantidade}</p>
             <p>{this.props.cartItem.nome}</p>
+            <img src={this.props.cartItem.imagem}/>
+          
             <button 
                 onClick={() => this.props.onRemoveProductFromCart(this.props.cartItem.id)}>
                     Remover
