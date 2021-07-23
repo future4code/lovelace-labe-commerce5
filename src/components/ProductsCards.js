@@ -21,12 +21,20 @@ const AddToCartButton = styled.button`
  margin-top: 5px;
 `
 
+const Imagens = styled.img`
+display: flex;
+width: 200px;
+height: 200px;
+margin-left: 50px;
+margin-top: 10px;
+`
+
 
 export class ProductsCards extends React.Component {
     render() {
         const product = this.props.product
         return <CardContainer>
-            <img src={product.imagem}/>
+            <Imagens src={product.imagem}/>
             <CardInfo>
                 <p>{product.nome}</p>
                 <p>{product.preco}</p>
