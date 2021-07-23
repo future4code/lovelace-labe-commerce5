@@ -4,7 +4,7 @@ import ProductsCards from './ProductsCards';
 
 const ProductsContainer = styled.div`
 border: 2px solid black;
-background-color: #BFBFBF;
+background-color: #985E6B;
 `;
 
 const ProductsHeader = styled.div`
@@ -23,7 +23,7 @@ padding: 8px;
 export class Products extends React.Component {
 
   state={
-    sort: "decrescente"
+    sort: "Crescente"
   }
 
 
@@ -43,7 +43,7 @@ export class Products extends React.Component {
     const filteredAndOrderedList = this.getFilteredAndOrderedList()
     return <ProductsContainer>
       <ProductsHeader>
-      <p>Nosso estoque de Camisetas: {filteredAndOrderedList.length}</p>
+      <p>Nossas Camisetas:</p>
         <label>
           Ordem:
           <select value={this.state.sort} onChange={this.onChangeSort}>
