@@ -9,7 +9,7 @@ import product3 from './pictures/product3.jpg';
 import product4 from './pictures/product4.jpg';
 import product5 from './pictures/product5.jpg';
 import product6 from './pictures/product6.jpg';
-import product7 from './pictures/product7.jpg';
+import product7 from './pictures/product7.png';
 import product8 from './pictures/product8.jpg';
 import ShoppingCart from './components/ShoppingCart';
 import ShoppingCartItem from './components/ShoppingCartItem';
@@ -32,28 +32,51 @@ const products = [
     id: 1,
     nome:"Camiseta I Believe",
     preco: 89.90,
-    img: {product1}
+    imagem: product1
   },
 
   {
     id: 2,
     nome:"Camiseta Abduction Blue",
     preco: 79.90,
-    imagem: {product2}
+    imagem: product2
   },
   {
     id: 3,
     nome:"Camiseta Abduction Green",
     preco: 79.90,
-    imagem: {product3}
+    imagem: product3
   },
   {
     id: 4,
     nome:"Camiseta Abduction Unicorn",
     preco: 79.90,
-    imagem: {product4}
+    imagem: product4
   },
-  
+  {
+    id: 5,
+    nome:"Camiseta Abduction Black",
+    preco: 79.90,
+    imagem: product5
+  },
+  {
+    id: 6,
+    nome:"Camiseta Gamer in Space",
+    preco: 79.90,
+    imagem: product6
+  },
+  {
+    id: 7,
+    nome:"Camiseta Gay Abduction",
+    preco: 79.90,
+    imagem: product7
+  },
+  {
+    id: 8,
+    nome:"Camiseta Alien Abduction",
+    preco: 79.90,
+    imagem: product8
+  },
 ]
 
 class App extends React.Component {
