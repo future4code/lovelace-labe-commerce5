@@ -1,35 +1,42 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components';
-const CardsContainer = styled.div`
-    border: 2px solid white;
-    display: flex;
-    flex-direction: column;
+import Products from './Products';
+
+const CardContainer = styled.div`
+border: 1px solid black;
+display: flex;
+flex-direction: column;
 `;
-const CardsInfo = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    p{
-     margin: 4px 0;
-    }
-`;
+
+const CardInfo = styled.div`
+display:  flex;
+flex-direction: column;
+padding: 20px;
+p {
+    margin: 10px 2px;
+}
+`
 const AddToCartButton = styled.button`
-    align-self: center;
-    margin-top: 4px;
-`;
-class ProductsCards extends React.Component {
+ align-self: center;
+ margin-top: 5px;
+`
+
+
+export class ProductsCards extends React.Component {
     render() {
         const product = this.props.product
-        return <CardsContainer>
-            <img src={product.img}/>
-            <CardsInfo>
-            <p><strong>{product.name}</strong></p>
-                <p>R$ {product.value}</p>
-                <button onClick = {() => this.props.addToCart(product.id)}>Adicionar ao Carrinho</button>
-            </CardsInfo>
-        </CardsContainer>
-                }
+        return <CardContainer>
+            <img src={product.imagem}/>
+            <CardInfo>
+                <p>{product.nome}</p>
+                <p>{product.preco}</p>
+                <AddToCartButton onClick={() => this.props.onAddProductToCart(product.id)}>Adicionar ao Carrinho
+                </AddToCartButton>
+            </CardInfo>
+        </CardContainer>
+    }
 }
+
 export default ProductsCards
 
 
