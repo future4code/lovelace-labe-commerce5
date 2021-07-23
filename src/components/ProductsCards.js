@@ -19,14 +19,16 @@ p {
 const AddToCartButton = styled.button`
  align-self: center;
  margin-top: 5px;
+ border-radius: 15px;
 `
 
 const Imagens = styled.img`
 display: flex;
 width: 200px;
 height: 200px;
-margin-left: 75px;
+margin-left: 45px;
 margin-top: 10px;
+padding: 20px;
 `
 
 

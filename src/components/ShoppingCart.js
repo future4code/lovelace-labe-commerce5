@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const ShoppingCartContainer = styled.div`
 border: 2px solid black;
 padding: 10px;
-background-color: #F2F2F2;
+background-color: #726993;
 `;
 
 const CartListContainer = styled.div`
@@ -15,7 +15,7 @@ gap: 4px;
 
 export class ShoppingCart extends React.Component {
 
-  getTotalValue =()=>{
+  getTotalValue = () => {
     let totalValue = 0
 
     for(let product of this.props.productsInCart){

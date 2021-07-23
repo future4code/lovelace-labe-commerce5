@@ -5,7 +5,7 @@ import Products from './Products';
 const FiltersContainer = styled.div`
 border: 2px solid black;
 padding: 10px;
-background-color: #F2F2F2;
+background-color: #207A80;
 // display: flex;
 // justify-content: space-evenly
 // align-items: center;

@@ -15,6 +15,11 @@ img {
 }
 `
 
+const Botao = styled.button`
+border-radius: 15px;
+`
+
+
 export class ShoppingCartItem extends React.Component {
     render() {
         return <ItemContainer>
@@ -23,10 +28,10 @@ export class ShoppingCartItem extends React.Component {
             <p>{this.props.cartItem.nome}</p>
             <img src={this.props.cartItem.imagem}/>
           
-            <button 
+            <Botao 
                 onClick={() => this.props.onRemoveProductFromCart(this.props.cartItem.id)}>
                     Remover
-                </button>                        
+                </Botao>                        
         </ItemContainer>
     }
 }
