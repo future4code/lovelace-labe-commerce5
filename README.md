@@ -1,4 +1,4 @@
-# LABE-COMMERCE - Loja Espacial, site de venda de camisestas com estampa fora desse mundo!
+# LABE-COMMERCE - Loja Espacial, site de venda de camisetas com estampa fora desse mundo!
 
 ## Link do surge: https://labecommerce-lojaespacial.surge.sh/ 
 
